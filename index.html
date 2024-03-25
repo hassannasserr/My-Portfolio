@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">portfolio.</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#ex">Experiences</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+   <main>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hello, I'm Hassan Nasser</h1>
+            <h3>Software Engineer</h3>
+            <p>Student at College of Computing and Information Technology</p>
+            <a href="#" class="btn">Hire me</a>
+        </div>
+        <div class="home-img">
+            <div class="glc">
+                <span></span>
+                <div class="inner-circle">
+                    <img src="opa.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="about" id="about">
+        <div class="about-content">
+            <h1>About me</h1>
+           <ul>
+            <li>Technical instructor at ICPC AAST Aswan Community</li>
+            <li>Programming core team at Google Developer Student Club</li>
+            <li>Campus member at IEEE Aswan Student Branch</li> 
+           </ul>
+        </div>
+    </section>
+    <hr>
+    <section class="skills" id="skills">
+        <div class="skills-content">
+            <h1>Skills</h1>
+            <ul>
+                <li>
+                    <h3>Programming Languages</h3>
+                    <p>C, C++, C#, Java, Python</p>
+                </li>
+                <li>
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, JavaScript, PHP, MySQL</p>
+                </li>
+            </ul>
+        </div>
+     </section>  
+     <hr>
+     <section class="Ex" id="ex">
+        <div class="ex-content">
+            <h1>Experiences</h1>
+            <ul>
+                <li>Problem Solver at <a href="https://codeforces.com/profile/TheOneAndOnlyS7S" target="_blank">Codeforces</a></li>
+                <li>Registration System in C <a href="https://github.com/hassannasserr/Registration_system" target="_blank">here</a></li>
+                <li>Hotel Reservation System using Database in SQL with GUI C# <a href="https://github.com/hassannasserr/Hotel-Reservation-System-Database-Integration---GUI-using-C-and-SQL-Server" target="_blank">here</a></li>
+                <li>Bank System using stack and queue in C++ with GUI <a href="https://github.com/hassannasserr/Bank-System-using-Stack-and-Queue-in-c-with-GUI" target="_blank">here</a></li>
+                <li>Contestant at Egyption Colligate Programming Contest Finals</li>
+            </ul>
+        </div>
+     </section>
+        <hr>  
+     <section class="contact" id="contact">
+        <div class="contact-content">
+            <h1>Contact Me</h1>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <label>Interests:</label>
+                <input type="checkbox" id="interest1" name="interest" value="Web Development">
+                <label for="interest1">Web Development</label>
+                <br>
+                <input type="checkbox" id="interest2" name="interest" value="Programming">
+                <label for="interest2">Programming</label>
+                <br>
+                <input type="checkbox" id="interest3" name="interest" value="Data Science">
+                <label for="interest3">Data Science</label>
+                <br>
+    
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+   </main>
+    <footer class="footer">
+        <p>&copy; 2024 Hassan Nasser. All rights reserved.</p>
+    </footer>
+</body>
+</html>

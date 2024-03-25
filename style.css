@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0c1022;
+    color: #FFF;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    background: linear-gradient(45deg, #f06, #3Cf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content {
+    max-width: 500px;
+    margin-left: -30px;
+}
+
+.home-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 48px;
+    border-radius: 40px;
+    font-size: 19px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.btn::before,
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    background: linear-gradient(45deg, #f06, #3Cf, #f06);
+    background-size: 200%;
+    background-position: 0 0;
+    z-index: -1;
+    border-radius: 40px;
+    transition: .5s ease;
+}
+
+.btn::before {
+    filter: blur(5px);
+}
+
+.btn:hover::before,
+.btn:hover::after {
+    background-position: 100% 0;
+}
+
+.home-img {
+    width: 410px;
+    height: 410px;
+}
+
+.glc {
+    position: relative;
+    width: 410px;
+    height: 410px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(45deg, #f06, #3Cf, #f06);
+}
+
+.glc .inner-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%; 
+    height: 95%; 
+    border-radius: 50%;
+    background-color: #0c1022;
+    overflow: hidden;
+}
+
+.glc .inner-circle img {
+    width: 130%; 
+    height: 130%; 
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -120px;
+    transform: translateY(-110px);
+}
+
+.about-content,
+.skills-content,
+.ex-content,
+.contact-content {
+    width: 100%;
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.about-content h1,
+.skills-content h1,
+.ex-content h1,
+.contact-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-content ul,
+.skills-content ul,
+.ex-content ul,
+.contact-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-content li,
+.skills-content li,
+.ex-content li,
+.contact-content li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact-content form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-content form label {
+    margin-bottom: 5px;
+}
+
+.contact-content form input[type="text"],
+.contact-content form input[type="email"],
+.contact-content form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-content form textarea {
+    resize: vertical;
+}
+
+.contact-content form label[for^="interest"] {
+    margin-right: 10px;
+}
+
+.contact-content form button[type="submit"] {
+    background-color: #f06;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-content form button[type="submit"]:hover {
+    background-color: #3Cf;
+}
+
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    background: #0c1022;
+    padding: 20px 10%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+hr {
+    background: linear-gradient(45deg, #f06, #3Cf);
+    height: 5px;
+    border: none;
+    margin: 40px auto;
+    width: 100%;
+}
